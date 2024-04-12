@@ -9,6 +9,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.words": [
+    "frontmatter",
+    "mdxeditor",
+    "Sandpack",
     "tailwindcss"
   ]
 }

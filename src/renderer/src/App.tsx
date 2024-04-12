@@ -1,15 +1,16 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-// import Versions from './components/Versions'
-// import electronLogo from './assets/electron.svg'
-// import { MouseEvent } from 'react'
+import CustomWindowTitleBar from '@/layout/custom-window-title-bar/CustomWindowTitleBar'
 import Routers from './routes/Router'
 import { BrowserRouter } from 'react-router-dom'
+import RootStore from '@/store/RootStore'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routers />
+        <RootStore>
+          <CustomWindowTitleBar />
+          <Routers />
+        </RootStore>
       </BrowserRouter>
     </>
   )

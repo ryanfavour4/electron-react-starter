@@ -4,7 +4,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/**/*.{js,ts,jsx,tsx,mdx}',
-    // Or if using `src` directory:
     './src/**/**/*.{js,ts,jsx,tsx,mdx}',
     '/src/renderer/*',
     './src/renderer/index.html',
@@ -14,15 +13,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1E2E45',
-        secondary: '#9A9162',
+        primary: '#145DA0',
+        secondary: '#E0F1FF',
         dark: '#3A3A38',
         black: '#1A1A1A',
-        light: '#E8E9E1',
+        light: '#ebebeb',
         white: '#FFFFFF',
+        'text-secondary-dark': '#7F7F7F',
+        'text-secondary': '#BDBDBD',
       },
       translate: ['group-hover', 'hover'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }

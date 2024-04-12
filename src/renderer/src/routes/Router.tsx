@@ -1,11 +1,13 @@
-import NotePad from '@renderer/pages/notepad/NotePad'
+import NotePage from '@renderer/pages/notepad/NotePage'
 import { Routes, Route } from 'react-router-dom'
 
 function Routers(): JSX.Element {
   return (
-    <Routes>
-      <Route path="/" element={<NotePad />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<NotePage />} />
+      </Routes>
+    </>
   )
 }
 export default Routers
